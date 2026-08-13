@@ -1,0 +1,151 @@
+:root {
+  --revamp-color: #f76a8d;
+  --revamp-color-dark: #ed174c;
+  --revamp-color-light: #fff0f3;
+  --revamp-color-gradient: linear-gradient(135deg, var(--revamp-color) 0%, #ffffff 100%);
+  --revamp-color-gradient-hover: linear-gradient(135deg, #e8456b 0%, #d63354 100%);
+  --revamp-shadow: 0 4px 15px rgba(247, 106, 141, 0.25);
+  --revamp-shadow-hover: 0 8px 25px rgba(247, 106, 141, 0.35);
+  --revamp-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --revamp-shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --revamp-radius: 12px;
+  --revamp-radius-sm: 8px;
+  --revamp-radius-lg: 16px;
+  --revamp-radius-pill: 25px;
+  --revamp-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --revamp-font: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  --revamp-text: #374151;
+  --revamp-text-light: #6b7280;
+  --revamp-bg: #ffffff;
+  --revamp-bg-alt: #f9fafb;
+  --revamp-border: #e5e7eb;
+  --revamp-success: #10b981;
+  --revamp-warning: #f59e0b;
+  --revamp-danger: #ef4444;
+  --revamp-info: #3b82f6;
+}
+#west {
+    border-right:none !important;
+}
+
+
+/*This remove the Name of Institution Header on the top of each page where this code is injected*/
+#subheaderDiv1 {
+    display: none;
+}
+
+/*LEFT Menu*/
+.x-panel-header {
+    background: linear-gradient(135deg, var(--revamp-color) 0%, #ffffff 100%);
+    color: white;
+    font-weight: 600;
+    border-radius: 8px 8px 0 0;
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: none;
+}
+
+/* Menu container */
+.x-panel-body {
+    padding: 10px 6px;
+}
+
+.menubox {
+    background-color: white !important;
+    border-radius: 10px;
+
+}
+
+/* Ogni voce principale del menu */
+.hang {
+    display: block;
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+    border-bottom: 1px solid var(--revamp-color) !important;
+    /* border-left: 4px solid transparent; */
+    margin: 8px 0;
+    box-shadow: 0 1px 6px rgba(249, 0, 0, 0.05);
+    /* transition: all 0.25s ease; */
+    text-indent: inherit;
+    padding: 5px 10px;
+    border-style:
+}
+
+/* Hover effetto "sollevato" */
+.hang:hover {
+    /* transform: translateY(-3px); */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    /* background: #ffffff; */
+    cursor: pointer;
+    border-color: var(--revamp-color) !important;
+    /* border-width: 1px; */
+    border-left: 4px solid var(--revamp-color);
+    padding: 5px 6px; /*added padding less then the .hang padding to compensate the border-lerft of 4px*/
+}
+
+.hang:hover i {
+    color: #ed174c;
+}
+
+/* Link testuali */
+.hang a {
+    color: #374151;
+    text-decoration: none;
+    font-weight: 500;
+    flex: 1;
+}
+
+.hang a:hover {
+    color: #ed174c;
+}
+
+/* Descrizioni sotto ogni voce */
+.menuboxsub {
+    margin-left: 28px;
+    font-size: 0.85rem;
+    color: #6b7280;
+    padding-bottom: 6px;
+}
+
+/* Voci di form (record status, monitoring ecc.) */
+.rc-form-menu-item {
+    display: block;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 8px 14px;
+    margin: 6px 0;
+    box-shadow: 0 1px 3px var(--revamp-color);
+    transition: all 0.25s ease;
+}
+
+.rc-form-menu-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px var(--revamp-color);
+    border-left: 4px solid var(--revamp-color);
+}
+
+.rc-form-menu-link {
+    color: #374151;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.rc-form-menu-link:hover {
+    color: #ed174c;
+}
+
+/*Reports*/
+#this_report_description {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-left: 4px solid var(--revamp-color);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 8px 0;
+}
