@@ -1,0 +1,16 @@
+
+html,
+body {
+     /* background-image: url(http://127.0.0.1:8080/redcap_v15.8.1/DataEntry/image_view.php?id=56&doc_id_hash=1a6f649e02bf30c2a24dd2bd43ea438b3cb6152306d374d43e6df38878d029162a462cdd92047ece8196fc882b6aebaba45f122c56a97885f014efdbdf7a8070) !important; */
+     background-image: url(redcap_background.png);
+     background-size: cover;
+}
+
+.mainwindow,
+#mainwindowsub {
+    background-color: transparent !important;
+}
+
+#center, #west {
+    background-color: transparent !important;
+}
