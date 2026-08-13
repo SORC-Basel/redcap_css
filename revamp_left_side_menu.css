@@ -111,7 +111,7 @@
 
 /* Voci di form (record status, monitoring ecc.) */
 .rc-form-menu-item {
-    display: block;
+    /* display: block; */ /*if active it displays the instrument in every page*/
     align-items: center;
     background: white;
     border-radius: 10px;
