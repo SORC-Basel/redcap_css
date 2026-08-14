@@ -1,4 +1,4 @@
-@scope (body:has(#event_grid_table, #record_status_table)) {
+@scope (body:has(#event_grid_table, #record_status_table, #report_table)) {
 
 
 /* ============================================================
@@ -181,7 +181,7 @@
 #record_status_table_wrapper table, /*first arm*/
 #record_status_table, /*further arms*/
 #event_grid_table_wrapper, /*wrap out instances*/
-#event_grid_table,
+#event_grid_table, /*rhp*/
 .rc-rhp-repeat-instrument-container-head {
 
   border-top-left-radius: var(--revamp-radius) !important;
@@ -195,8 +195,8 @@
 /* table th, */
 #record_status_table_wrapper table th,
 #record_status_table th, /*further arms*/
-#event_grid_table_wrapper th,
-#event_grid_table th,
+#event_grid_table_wrapper th, /*rhp*/
+#event_grid_table th, /*rhp*/
 .rc-rhp-repeat-instrument-container-head {
     background-color: var(--revamp-color) !important;
     color: rgb(255, 255, 255) !important;
