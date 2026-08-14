@@ -1,0 +1,444 @@
+@scope (body:has(#event_grid_table, #record_status_table)) {
+
+
+/* ============================================================
+   2. BOTTONI MODERNI
+   ============================================================ */
+
+/* Bottoni base */
+.btn,
+.btn-defaultrc,
+.jqbuttonmed
+ {
+  font-family: var(--revamp-font) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  padding: 5px 8px !important;
+  border-radius: var(--revamp-radius-pill) !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: var(--revamp-transition) !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  box-shadow: var(--revamp-shadow-light) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  line-height: 1.5 !important;
+}
+
+/* Bottoni primari con gradient */
+.btn-primaryrc {
+  background: var(--revamp-color) !important;
+  color: white !important;
+  box-shadow: var(--revamp-shadow) !important;
+}
+
+.btn-primaryrc:hover{
+  background: var(--revamp-color-gradient-hover) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: var(--revamp-shadow-hover) !important;
+  color: white !important;
+}
+
+/* Bottoni default */
+.btn-defaultrc,
+.jqbuttonmed
+ {
+  background: white !important;
+  color: var(--revamp-text) !important;
+  border: 2px solid var(--revamp-border) !important;
+}
+
+.btn-defaultrc:hover,
+.jqbuttonmed:hover {
+  border-color: var(--revamp-color) !important;
+  color: var(--revamp-color) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: var(--revamp-shadow) !important;
+  background: var(--revamp-color-light) !important;
+}
+
+/* Bottoni verdi */
+.btn-rcgreen {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  color: white !important;
+  /* padding: 5px 8px !important; */
+}
+
+.btn-rcgreen:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.35) !important;
+  color: white !important;
+}
+
+/* Bottoni rossi */
+.btn-rcred {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+  color: white !important;
+}
+
+.btn-rcred:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.35) !important;
+  color: white !important;
+}
+
+/* Bottoni viola */
+.btn-rcpurple {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%) !important;
+  color: white !important;
+}
+
+.btn-rcpurple:hover {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.35) !important;
+  color: white !important;
+}
+
+/* Bottoni gialli */
+.btn-rcyellow {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%) !important;
+  color: white !important;
+}
+
+.btn-rcyellow:hover {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.35) !important;
+  color: white !important;
+}
+
+/* Bottoni piccoli */
+.btn-xs {
+  padding: 6px 16px !important;
+  gap: 1px !important;
+  font-size: 12px !important;
+  border-radius: var(--revamp-radius-pill) !important;
+}
+
+.btn-sm {
+  padding: 8px 20px !important;
+  font-size: 13px !important;
+}
+
+/* Dropdown buttons */
+.dropdown-toggle {
+  border-radius: var(--revamp-radius-pill) !important;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  border: none !important;
+  border-radius: var(--revamp-radius) !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15) !important;
+  padding: 8px 0 !important;
+  margin-top: 8px !important;
+}
+
+/* #other-options-btn .dropdown-item, */
+.dropdown-item {
+  /* padding: 10px 20px !important;
+  font-weight: 500 !important;
+  transition: var(--revamp-transition) !important;
+  border-radius: 0 !important; */
+}
+
+.dropdown-item:hover {
+  background: var(--revamp-color-light) !important;
+  color: var(--revamp-color-dark) !important;
+  padding-left: 24px !important;
+}
+
+/* recordActionDropdown */
+
+#recordActionDropdown{
+    background:white;
+    border:none;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.15);
+}
+
+#recordActionDropdown li a{
+    padding:14px 18px;
+    /* transition:.2s; */
+}
+
+#recordActionDropdown li a:hover{
+    background:#eff6ff;
+}
+
+/* ============================================================
+   TABLEs
+   ============================================================ */
+
+#record_status_table_wrapper table, /*first arm*/
+#record_status_table, /*further arms*/
+#event_grid_table_wrapper, /*wrap out instances*/
+#event_grid_table,
+.rc-rhp-repeat-instrument-container-head {
+
+  border-top-left-radius: var(--revamp-radius) !important;
+  border-top-right-radius: var(--revamp-radius) !important;
+  overflow: hidden !important;
+  box-shadow: var(--revamp-shadow-card) !important;
+  background: white !important;
+  /* width: 100% !important; */
+}
+
+/* table th, */
+#record_status_table_wrapper table th,
+#record_status_table th, /*further arms*/
+#event_grid_table_wrapper th,
+#event_grid_table th,
+.rc-rhp-repeat-instrument-container-head {
+    background-color: var(--revamp-color) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+#event_grid_table td
+{
+  vertical-align: middle !important;
+  /* padding: 12px 16px !important;
+  border-bottom: 1px solid var(--revamp-border) !important;
+  border-right: none !important;
+  border-left: none !important;
+  transition: var(--revamp-transition) !important; */
+}
+
+/*Buttons within tables*/
+#record_status_table_wrapper button.btn-defaultrc,
+#record_status_table button.btn-defaultrc,
+#event_grid_table_wrapper button.btn-defaultrc,
+#event_grid_table button.btn-defaultrc
+ {
+  font-family: var(--revamp-font) !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  padding: 2px !important;
+  border-radius: var(--revamp-radius-pill) !important;
+  /* border: none !important;
+  cursor: pointer !important;
+  transition: var(--revamp-transition) !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important; */
+ /* gap: 8px !important; */
+  box-shadow: var(--revamp-shadow-light) !important;
+  /* position: relative !important;
+  overflow: hidden !important; */
+  line-height: 1 !important;
+}
+
+/* ============================================================
+   LEGEND
+   ============================================================ */
+/* Tabella legenda stato */
+/*cell on the left*/
+#center > table > tbody > tr > td.col-8, /*rsd*/
+#center > table:nth-child(8) > tbody > tr > td:nth-child(1) /*rhp*/
+ {
+  vertical-align: middle !important;
+}
+
+#center > table > tbody > tr > td.col-8 > span, /*rsd*/
+#center > table:nth-child(8) > tbody > tr > td:nth-child(1) > div > span /*rhp*/
+ {
+  vertical-align: super;
+}
+
+/*cell on the right*/
+#rsd_legend,
+#center > table:nth-child(8) > tbody > tr > td.d-none.d-sm-block > div /*rhp*/
+ {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 20px !important;
+  margin: 12px 0 !important;
+}
+
+#status-icon-legend {
+  background: white !important;
+  border: none !important;
+  border-radius: var(--revamp-radius) !important;
+  box-shadow: var(--revamp-shadow-card) !important;
+  padding: 20px !important;
+}
+
+#status-icon-legend tr td {
+  padding: 8px 12px !important;
+  border: none !important;
+  font-size: 13px !important;
+}
+
+#status-icon-legend tr td[colspan] {
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  color: var(--revamp-color-dark) !important;
+  padding-bottom: 12px !important;
+  border-bottom: 2px solid var(--revamp-color-light) !important;
+}
+
+/*Record status dashboard display settings*/
+#center > div.chklist {
+  background: rgb(255, 255, 255) !important;
+  border: none !important;
+  border-radius: var(--revamp-radius) !important;
+  box-shadow: var(--revamp-shadow-card) !important;
+  padding: 20px !important;
+  margin: 12px 0 !important;
+  transition: var(--revamp-transition) !important;
+}
+
+
+/* ============================================================
+   4. RECORD HOME PAGE
+   ============================================================ */
+
+
+/* ============================================================
+   5. RECORD STATUS DASHBOARD
+   ============================================================ */
+
+/* Dashboard header */
+.projhdr {
+  background: var(--revamp-color-gradient) !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  padding: 18px 24px !important;
+  border-radius: var(--revamp-radius-lg) !important;
+  margin: 20px 0 16px !important;
+  box-shadow: var(--revamp-shadow) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  width: 100% !important;
+}
+
+.projhdr i {
+  font-size: 24px !important;
+}
+
+/* Select e dropdown */
+.x-form-text,
+.x-form-field,
+select.x-form-field,
+select.x-form-text {
+  border: 2px solid var(--revamp-border) !important;
+  border-radius: var(--revamp-radius-sm) !important;
+  padding: 6px 10px !important;
+  font-size: 14px !important;
+  font-family: var(--revamp-font) !important;
+  transition: var(--revamp-transition) !important;
+  background: white !important;
+  color: var(--revamp-text) !important;
+  box-shadow: none !important;
+}
+
+.x-form-text:focus,
+.x-form-field:focus,
+select.x-form-field:focus,
+select.x-form-text:focus {
+  border-color: var(--revamp-color) !important;
+  box-shadow: 0 0 0 4px rgba(247, 106, 141, 0.15) !important;
+  outline: none !important;
+} 
+
+.x-form-text:hover,
+.x-form-field:hover,
+select.x-form-field:hover,
+select.x-form-text:hover {
+  border-color: var(--revamp-color) !important;
+}
+
+/* Dashboard config form */
+#dashboard-config {
+  background: white !important;
+  border: none !important;
+  border-radius: var(--revamp-radius-lg) !important;
+  box-shadow: var(--revamp-shadow-card) !important;
+  padding: 24px !important;
+  margin: 20px 0 !important;
+}
+
+#dashboard-config .chklisthdr {
+  font-size: 18px !important;
+  color: var(--revamp-color-dark) !important;
+}
+
+
+/* Scrollbar personalizzata */
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--revamp-bg-alt) !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--revamp-color) !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--revamp-color-dark) !important;
+}
+
+/* Selezione testo */
+::selection {
+  background: var(--revamp-color) !important;
+  color: white !important;
+}
+
+/* Focus visibile per accessibilita' */
+*:focus-visible {
+  outline: 3px solid var(--revamp-color) !important;
+  outline-offset: 2px !important;
+}
+
+
+/* ============================================================
+  RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+  /* .btn {
+    padding: 8px 16px !important;
+    font-size: 13px !important;
+  }
+
+  .projhdr {
+    font-size: 18px !important;
+    padding: 14px 18px !important;
+  }
+
+  .toolbar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  } */
+/* 
+  table.dataTable thead tr th,
+  #record_status_table thead tr th {
+    font-size: 12px !important;
+    padding: 10px 12px !important;
+  }
+
+  table.dataTable tbody tr td,
+  #record_status_table tbody tr td {
+    padding: 10px 12px !important;
+    font-size: 13px !important;
+  } */
+
+}
+
+}
