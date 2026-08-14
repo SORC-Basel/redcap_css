@@ -198,7 +198,7 @@
 #event_grid_table_wrapper th, /*rhp*/
 #event_grid_table th, /*rhp*/
 .rc-rhp-repeat-instrument-container-head,
-#report_table /*reports*/
+#report_table thead tr th /*reports*/
  {
     background-color: var(--revamp-color) !important;
     color: rgb(255, 255, 255) !important;
