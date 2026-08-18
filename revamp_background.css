@@ -5,12 +5,13 @@ body {
 }
 
 .mainwindow,
-#mainwindowsub {
+#mainwindowsub,
+#center, #west {
     background-color: transparent !important;
 }
 
-#center, #west {
-    background-color: transparent !important;
+#subheader {
+    background: transparent !important;
 }
 
 /*no background within the dashboard container*/
