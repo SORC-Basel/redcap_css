@@ -15,7 +15,8 @@ body {
 }
 
 /*no background within the dashboard container*/
-#dashboard_container {
+#dashboard_container,
+#codebook-table {
   background: white;
 }
 

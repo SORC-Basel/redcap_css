@@ -259,7 +259,8 @@
 
 /*cell on the right*/
 #rsd_legend,
-#center > table:nth-child(8) > tbody > tr > td.d-none.d-sm-block > div /*rhp*/
+/* #center > table:nth-child(8) > tbody > tr > td.d-none.d-sm-block > div  */
+#center > table > tbody > tr > td.d-none.d-sm-block > div.chklist /*rhp*/
  {
   background-color: transparent !important;
   border: none !important;
