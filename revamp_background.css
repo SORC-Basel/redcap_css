@@ -11,7 +11,7 @@ body {
 }
 
 #subheader {
-    background: transparent !important;
+    background-imgage: none !important;
 }
 
 /*no background within the dashboard container*/
