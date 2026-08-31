@@ -14,9 +14,12 @@ body {
     background-image: none !important;
 }
 
-/*no background within the dashboard container*/
+/*--White background--*/
 #dashboard_container,
-#codebook-table {
+#codebook-table,
+.mlm-setup-container,
+#comptable /*-import data table-*/
+ {
   background: white;
 }
 
