@@ -18,7 +18,9 @@ body {
 #dashboard_container,
 #codebook-table,
 .mlm-setup-container,
-#comptable /*-import data table-*/
+#comptable, /*-import data table-*/
+#errortable, /*-error table by import data-*/
+#this_report_description 
  {
   background: white;
 }
