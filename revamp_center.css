@@ -413,6 +413,22 @@ select.x-form-text:hover {
 
 
 /* ============================================================
+   5. REPORTS
+   ============================================================ */
+ #this_report_description {
+     display: block;
+     width: 100%;
+     box-sizing: border-box;
+     background: #ffffff;
+     border: 1px solid #d1d5db;
+     border-left: 4px solid var(--revamp-color);
+     border-radius: 8px;
+     padding: 12px 16px;
+     margin: 8px 0;
+ }
+
+
+/* ============================================================
   RESPONSIVE
    ============================================================ */
 @media (max-width: 768px) {
