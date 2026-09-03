@@ -196,6 +196,7 @@
 /* table th, */
 #record_status_table_wrapper table thead th,
 #record_status_table thead th, /*further arms*/
+table.fixedHeader-floating thead th, /*rsd floating header*/
 #event_grid_table_wrapper th, /*rhp*/
 #event_grid_table th, /*rhp*/
 .rc-rhp-repeat-instrument-container-head,
