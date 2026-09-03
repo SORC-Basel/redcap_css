@@ -194,8 +194,8 @@
 }
 
 /* table th, */
-#record_status_table_wrapper table th,
-#record_status_table th, /*further arms*/
+#record_status_table_wrapper table thead th,
+#record_status_table thead th, /*further arms*/
 #event_grid_table_wrapper th, /*rhp*/
 #event_grid_table th, /*rhp*/
 .rc-rhp-repeat-instrument-container-head,

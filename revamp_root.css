@@ -5,6 +5,7 @@
   --revamp-color: #f76a8d;
   --revamp-color-dark: #ed174c;
   --revamp-color-light: #fff0f3;
+  --revamp-color-radio: #f35e83;
   --revamp-color-gradient: linear-gradient(135deg, var(--revamp-color) 0%, #ffffff 100%);
   --revamp-color-gradient-hover: linear-gradient(135deg, #e8456b 0%, #d63354 100%);
   --revamp-shadow: 0 4px 15px rgba(247, 106, 141, 0.25);
